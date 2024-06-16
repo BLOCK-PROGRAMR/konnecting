@@ -1,17 +1,14 @@
 
-import { WorkerImg } from "../utils/constants";
-import BackgroundImageSlider from "./BackgroundHome";
 import{Link} from "react-router-dom";
+import { Mason1 } from "../utils/constants";
 
 const Find=()=>{
-
-
     return(
         <div> 
          <div className="flex flex-col md:flex-row">
   <div className="md:ml-40 md:flex-1 flex justify-center">
     <img
-      src={WorkerImg}
+      src={Mason1}
       alt="Worker Image"
       className="m-4 p-6 shadow-xl rounded-xl hover:cursor-pointer w-full md:w-[500] hover:w-[400] flex-shrink-0"
     />
@@ -44,14 +41,8 @@ const Find=()=>{
   
 </div>
 
-
-             </div>
+</div>
     )
 }
 
 export default Find;
-
-{/**<div className="w-[300] md:w-1/2 lg:w-1/3 xl:w-[1/4] flex-1 p-4 shadow-xl rounded-lg">
-   
-    <BackgroundImageSlider />
-  </div> */}

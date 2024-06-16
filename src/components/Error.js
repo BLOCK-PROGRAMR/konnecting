@@ -5,7 +5,7 @@ import { useRouteError } from "react-router-dom";
 
 const Error=()=>{
 const err=useRouteError();
-console.log(err);
+//console.log(err);
     return(
 <div>
     <div className="text-center text-4xl align-middle my-36">
@@ -20,3 +20,4 @@ console.log(err);
     )
 }
 export default Error;
+// import react-router component and we can use the useRouteError()

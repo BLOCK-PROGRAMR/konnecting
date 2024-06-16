@@ -17,12 +17,8 @@ const Header = () => {
   return (
     <nav className="bg-white border-gray-200 shadow-xl">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        {/* <img
-          src={HeaderIcon}
-          className="w-11"
-          alt="Logo"
-        /> */}
-        <span className="self-center text-7xl whitespace-nowrap dark:text-black font-serif flex ">CONNECTING</span>
+
+        <span className="self-center text-7xl whitespace-nowrap text-black font-serif flex ">CONNECTING</span>
         <button
           data-collapse-toggle="navbar-default"
           type="button"

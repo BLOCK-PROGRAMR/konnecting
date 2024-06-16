@@ -8,10 +8,12 @@ import Findworker from "./components/Find-workers";
 import Error from "./components/Error";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
-import LoginForm from "./components/LoginForm";
+import ReigistrationForm from "./components/RegistrationForm";
 import Services from "./components/Services";
 import UserLogin from "./components/login";
 import SignUp from "./components/signin";
+import Data from "./components/moreAbout";
+
 
 
 
@@ -19,7 +21,7 @@ import SignUp from "./components/signin";
 const App = () => {
   return (
     <div  className="">
-      
+      {/* outlet is used to combine certain components */}
      <Header/>
      <Outlet/>
 <Footer/>
@@ -48,13 +50,18 @@ children:[
     path:"/services",
     element:<Services/>
   },
+  {
+    path:"/userdata",
+    element:<Data/>
+  },
+
 ],
 
 errorElement:<Error/>
 },
 {
   path:"/login",
-  element:<LoginForm/>,
+  element:<ReigistrationForm/>,
 },
 {
   path:"/userlogin",

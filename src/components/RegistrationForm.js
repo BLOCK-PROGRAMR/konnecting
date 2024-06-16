@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 
-const LoginForm = () => {
+const ReigistrationForm = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
@@ -65,9 +65,10 @@ const LoginForm = () => {
     formData.append('address', address);
     formData.append('phoneNumber', phoneNumber);
     formData.append('skills', skills);
+    console.log(formData.skills);
   console.log("submitted");
    
-
+//use fetching to send the data local server
     fetch("http://localhost:2005/api/connecting/lgin", {
       method: "post",
       body: formData,
@@ -98,8 +99,10 @@ const LoginForm = () => {
 
 
   return (
-    <div className="mt-10">
-      <h1 className="text-center font-semibold text-2xl">LoginForm:</h1>
+    <div className="mt-10 ">
+      
+      <div className="">
+      <h1 className="text-center font-semibold text-2xl">ReigistrationForm</h1>
       <div className="min-h-screen flex justify-center items-center">
         <form onSubmit={handleSubmit} className="bg-green-100 shadow-md rounded px-8 pt-6 pb-8 mb-4 max-w-lg w-full">
         <div className="mb-4">
@@ -201,8 +204,9 @@ const LoginForm = () => {
           </div>
         </form>
       </div>
+      </div>
     </div>
   );
 };
 
-export default LoginForm;
+export default ReigistrationForm;
