@@ -1,8 +1,11 @@
 {
   "name": "client",
+  "homepage": "https://BLOCK-PROGRAMR.github.io/workers",
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "start": "parcel index.html",
     "build": "parcel build index.html"
   },
@@ -10,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "parcel": "^2.12.0",
     "postcss": "^8.4.38",
     "process": "^0.11.10",
@@ -26,5 +30,4 @@
       "target": "http://localhost:2005"
     }
   }
-  
 }
