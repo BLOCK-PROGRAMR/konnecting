@@ -1,13 +1,13 @@
 {
   "name": "client",
-  "homepage": "https://BLOCK-PROGRAMR.github.io/workers",
+  "homepage": "https://github.com/BLOCK-PROGRAMR/konnecting",
   "version": "1.0.0",
   "description": "",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --public-url ./"
   },
   "keywords": [],
   "author": "",
